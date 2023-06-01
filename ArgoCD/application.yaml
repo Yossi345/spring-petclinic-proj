@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: spring-petclinic
+  name: spring-petclinic-proj
   namespace: argocd
 operation:
   initiatedBy:
@@ -15,7 +15,7 @@ spec:
   project: demo1
   source:
     path: chart
-    repoURL: https://github.com/elevy99927/spring-petclinic.git
+    repoURL: https://github.com/Yossi345/spring-petclinic-proj.git
     targetRevision: HEAD
   syncPolicy:
     automated: {}
