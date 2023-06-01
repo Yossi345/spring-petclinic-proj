@@ -15,7 +15,7 @@ spec:
         app: {{ .Values.web.appname }}
     spec:
       containers:
-      - name: nginx
+      - name: {{ .Values.web.appname }}
         image: {{ .Values.web.repo}}/{{ .Values.web.image }}:{{ .Values.web.tag }}
         ports:
         - containerPort: {{ .Values.web.port }}
